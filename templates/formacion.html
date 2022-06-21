@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formacion</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    </head>
+    <body>
+        
+        <div class="portada2">
+            <h1 id="imgpor">Mario Gutierrez</h1>
+            <nav>
+                <span><a href="/">Home</a></span>
+                <span><a href="/proyectos">Proyectos</a></span>
+                <span><a href="/formacion">Formacion</a></span>
+                <span><a href="/contacto">Contacto</a></span>
+            </nav>
+            <h1>Formacion</h1>
+        </div>
+        <div id="edu">
+            <h2>Educacion</h2>
+            <img class="tec" src="https://www.coneval.org.mx/quienessomos/PublishingImages/TEC.png" >
+            <ul>
+                <li>Instituto Tecnológico de Monterrey Campus Laguna <strong>2019-Actualidad</strong></li>
+                    <P>Sexto semestre de Ingeniería Mecatrónica <a href="https://tec.mx/en/innovation-and-transformation/bs-in-mechatronics-engineering" target="_blank">Learn More</a> </P> 
+                <li>Instituto Tecnológico de Monterrey Campus Laguna <strong>2018-2019</strong></li>
+                    <P>Sexto semestre de Ingeniería Mecatrónica </P>
+                <li>Colegio americano de Torreón <strong>2015-2018</strong></li>
+                    <P>Preparatoria </P>
+            </ul>
+        </div>
+        <div id="extra">
+            <h2>Extra academico</h2>
+            <img class="tec" src="data:image/png;base64,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" >
+            <ul>
+                <li>FETEC consejo estudiantil 2022</li>
+                <li>FETEC consejo estudiantil 2020</li>
+                <li>IMEFU Director de emprendimiento 2020</li>
+                <li>IMEFU Director de promocion y desarollo 2020</li>
+            </ul>
+        </div>
+        <div id="experiencia">
+            <h2>Experencia</h2>
+            <img class="tec" src="https://media-exp1.licdn.com/dms/image/C4E0BAQEnmrPz76m8iQ/company-logo_200_200/0/1618356119368?e=2147483647&v=beta&t=79F7-2DOz0NqJM25e9TxNLsVuqYpbsX9jiZbLHWALvY" >
+            <ul>
+                <li>Tec de Monterrey On Campus Intern 2022-Actualidad</li>
+                <p>Backend developer</p>
+                <li>Gayosso</li>
+                <p>Telemarketing</p>
+                <li>Balriva Soluciones Integrales 2018-2020</li>
+                <p>Diseño y modelacion de planos arquitetonicos</p>
+            </ul>
+        </div>
+    </body>
+</html>
